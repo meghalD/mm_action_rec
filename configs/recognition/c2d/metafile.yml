@@ -12,7 +12,7 @@ Models:
     Metadata:
       Architecture: ResNet50
       Batch Size: 32
-      Epochs: 100
+      Epochs: 5
       FLOPs: 33G
       Parameters: 24.3M
       Pretrained: ImageNet
@@ -21,7 +21,8 @@ Models:
       Training Resources: 8 GPUs
     Modality: RGB
     Results:
-      - Dataset: Kinetics-400
+      #- Dataset: Kinetics-400
+      - Dataset: UCF101	
         Task: Action Recognition
         Metrics:
               Top 1 Accuracy: 73.44
