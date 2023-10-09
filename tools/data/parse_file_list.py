@@ -91,9 +91,13 @@ def parse_ucf101_splits(level):
     Returns:
         list: "train", "val", "test" splits of UCF-101.
     """
-    class_index_file = 'data/ucf101/annotations/classInd.txt'
-    train_file_template = 'data/ucf101/annotations/trainlist{:02d}.txt'
-    test_file_template = 'data/ucf101/annotations/testlist{:02d}.txt'
+    # class_index_file = 'data/ucf101/annotations/classInd.txt'
+    # train_file_template = 'data/ucf101/annotations/trainlist{:02d}.txt'
+    # test_file_template = 'data/ucf101/annotations/testlist{:02d}.txt'
+    class_index_file = '/home/mdani31/akata-shared/datasets/UCF101/annotations/classInd.txt'
+    train_file_template = '/home/mdani31/akata-shared/datasets/UCF101/annotations/trainlist{:02d}.txt'
+    test_file_template = '/home/mdani31/akata-shared/datasets/UCF101/annotations/testlist{:02d}.txt'
+   
 
     with open(class_index_file, 'r') as fin:
         class_index = [x.strip().split() for x in fin]

@@ -219,7 +219,10 @@ def main():
 
     assert len(splits) == args.num_split
 
-    out_path = args.out_root_path + args.dataset
+    if args.dataset == 'ucf101':
+        out_path = '/home/mdani31/akata-shared/datasets/' + 'UCF101' 
+    else:
+        out_path = args.out_root_path + args.dataset
 
     if len(splits) > 1:
         for i, split in enumerate(splits):
